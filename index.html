@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sujal Sahu Resume</title>
+    <meta name="description" content="Resume Website Template Free Download">
+    <meta name="keywords" content="Resume Website Template Free Download">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #FF6F61;
+            --secondary-color: #222222;
+            --background-color: #55f6f6;
+            --text-color: #666666;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            transition: all 0.3s;
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .sidebar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--white);
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .sidebar .nav-link:hover, 
+        .sidebar .nav-link.active {
+            color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .sidebar .nav-link i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            background-color: var(--white);
+        }
+        
+        .section {
+            padding: 60px 0;
+            border-bottom: 30px solid var(--background-color);
+        }
+        
+        .section-header {
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        
+        .section-header h2 {
+            color: var(--secondary-color);
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: var(--primary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        .profile-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .skill-box {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .skill-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-box-header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .progress {
+            height: 10px;
+            background-color: #e9ecef;
+        }
+        
+        .progress-bar {
+            background-color: var(--primary-color);
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 991.98px) {
+            .sidebar {
+                position: static;
+                height: auto;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4 sidebar p-0">
+                <div class="d-flex flex-column h-100">
+                    <!-- Profile Image -->
+                    <div class="text-center p-4">
+                        <img src="about.jpg" alt="Profile Image" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-expand-md navbar-dark p-0">
+                        <div class="container-fluid flex-column align-items-start p-0">
+                            <button class="navbar-toggler ms-3 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                                <ul class="navbar-nav flex-column w-100">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#header"><i class="fa fa-home me-2"></i>Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about"><i class="fa fa-address-card me-2"></i>About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#education"><i class="fa fa-star me-2"></i>Education</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skills"><i class="fa fa-tasks me-2"></i>Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#certifications"><i class="fa fa-file-archive me-2"></i>Certifications</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#projects"><i class="fa fa-file-archive me-2"></i>Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#leadership"><i class="fa fa-file-archive me-2"></i>Leadership</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hobbies"><i class="fa fa-file-archive me-2"></i>Hobbies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact"><i class="fa fa-envelope me-2"></i>Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                    <!-- Social Icons -->
+                    <div class="mt-auto p-4 text-center">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/sujal-sahu-45a487275/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/sujal018" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8 ms-sm-auto main-content">
+                <!-- Header Section -->
+                <section id="header" class="section bg-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <p class="text-primary fw-bold fs-5">I'm</p>
+                                <h1 class="display-4 fw-bold mb-3">Sujal Sahu</h1>
+                                <h2 class="typed-text text-muted mb-4">Data Analyst, Front End Developer, Java developer</h2>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-download me-2"></i>Resume</a>
+                                    <a href="#" class="btn btn-outline-dark btn-lg"><i class="fa fa-hands-helping me-2"></i>Hire Me</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <img src="profile.png" alt="Profile" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- About Section -->
+                <section id="about" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <img src="sujal.jpg" alt="About Image" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="lead">
+                                    Seeking a challenging position in a reputed organization where I can
+                                    learn new skills, expand my knowledge, and leverage my learnings. To
+                                    get an opportunity where I can make the best of my potential and
+                                    contribute to the organization's growth.
+                                </p>
+                                <a href="#" class="btn btn-primary mt-3">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Education Section -->
+                <section id="education" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <span class="text-muted">April 2018 <i>to</i> April 2019</span>
+                                        <h3 class="h4 mt-2">10th (SSLC)</h3>
+                                        <h5 class="text-muted">SATPUDA HS SCHOOL, GHODADHONGRI – BETUL, Madhya Pradesh, India</h5>
+                                        <h4 class="text-primary mt-2">89%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <span class="text-muted">April 2020 <i>to</i> April 2021</span>
+                                        <h3 class="h4 mt-2">12th (HSC)</h3>
+                                        <h5 class="text-muted">Bhagwan Shrichand Public H.S.School, – Chhindwara, Madhya Pradesh, India</h5>
+                                        <h4 class="text-primary mt-2">90.4%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <span class="text-muted">June 2021 <i>to</i> June 2025</span>
+                                        <h3 class="h4 mt-2">Bachelor of Engineering, Information Technology</h3>
+                                        <h5 class="text-muted">SAVITRIBAI PHULE PUNE UNIVERSITY – Pune, India</h5>
+                                        <h4 class="text-primary mt-2">CGPA: 8.95</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Skills Section -->
+                <section id="skills" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Programming Skills -->
+                            <div class="col-md-4 mb-4">
+                                <div class="skill-box h-100">
+                                    <div class="skill-box-header">
+                                        <i class="fas fa-code me-2"></i>
+                                        <h3 class="h5 mb-0 d-inline-block">Programming</h3>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>ML & DL</span>
+                                                <span>60%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Python</span>
+                                                <span>70%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Java</span>
+                                                <span>50%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Web Development Skills -->
+                            <div class="col-md-4 mb-4">
+                                <div class="skill-box h-100">
+                                    <div class="skill-box-header">
+                                        <i class="fas fa-laptop-code me-2"></i>
+                                        <h3 class="h5 mb-0 d-inline-block">Web Development</h3>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>HTML/CSS</span>
+                                                <span>50%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>React</span>
+                                                <span>10%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Node.js</span>
+                                                <span>10%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Database Skills -->
+                            <div class="col-md-4 mb-4">
+                                <div class="skill-box h-100">
+                                    <div class="skill-box-header">
+                                        <i class="fas fa-database me-2"></i>
+                                        <h3 class="h5 mb-0 d-inline-block">Database</h3>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>MySQL</span>
+                                                <span>65%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>MongoDB</span>
+                                                <span>65%</span>
+                                            </div>
+                                            <div class="progress mt-1">
+                                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Certifications Section -->
+                <section id="certifications" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Certifications & Training</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h3 class="h4">Advance Course</h3>
+                                        <h5 class="text-muted">2023-2024</h5>
+                                        <p class="mt-3">
+                                            Successfully completed an Advanced Course and Training on emerging technologies, including Machine Learning, the Internet of Things, Deep Learning, Computer Vision, and SAP Advanced Business Application Programming (ABAP) on the Business Technology Platform (BTP). This training took place during the 2023-2024 period as part of the Code Unnati Program, a CSR initiative by SAP and implemented by the Edunet Foundation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h3 class="h4">Value Added Course</h3>
+                                        <h5 class="text-muted">2024-2025</h5>
+                                        <p class="mt-3">
+                                            Completed a Value-Added Course and training on Emerging Technologies (IoT Cyber Security, SAP Analytics Cloud, Power BI, Design Engineering) during 2024-2025 under the Code Unnati Program, a CSR initiative of SAP implemented by the Edunet Foundation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Projects Section -->
+                <section id="projects" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Projects</h2>
+                        </div>
+                        
+                        <h4 class="mb-4">IOT based Projects</h4>
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">Radar using Arduino UNO</h3>
+                                                <p class="mb-0">
+                                                    Engineered a radar system using Arduino Uno for object detection. Implemented ultrasonic sensors to measure distance and provide real-time feedback.
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">Automatic Garden Watering System</h3>
+                                                <p class="mb-0">
+                                                    Developed an Automatic Garden Watering System utilizing sensors and timers to maintain optimal plant moisture levels without manual effort.
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="mb-4">Machine Learning (ML) and Deep Learning (DL) based Projects</h4>
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">Resume Matcher</h3>
+                                                <p class="mb-0">
+                                                    Built a tool that uses cosine similarity and NLP to compare candidate resumes with job descriptions, streamlining the recruitment process by identifying the best-fit candidates.
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">Sign Talk</h3>
+                                                <p class="mb-0">
+                                                    Sign Talk For Blind And Deaf Translating Hand Gestures Into Audible And Textual Communication
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="mb-4">Power BI Desktop Project</h4>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">Zomato Power BI Dashboard</h3>
+                                                <p class="mb-0">
+                                                    Built a Power BI dashboard to track Zomato's sales, orders, and top restaurants. Used data cleaning, DAX, and filters for better insights.
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="me-3">
+                                                <h3 class="h4">IPL Dataset Analysis</h3>
+                                                <p class="mb-0">
+                                                    Conducted comprehensive exploratory data analysis, statistical analysis, and data visualization on a cricket dataset using Python. Revealed valuable insights into player performance, match statistics, and team strategies. Presented findings through compelling visualizations to effectively communicate data-driven insights.
+                                                </p>
+                                            </div>
+                                            <a href="https://github.com/sujal018" class="btn btn-primary mt-3 mt-sm-0" target="_blank">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Leadership Section -->
+                <section id="leadership" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Leadership</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h4">ITSA Management Committee Head</h3>
+                                        <h5 class="text-muted">Pune, Maharashtra</h5>
+                                        <span class="text-primary d-block mb-2">Aug 2023 – July 2024</span>
+                                        <p>
+                                            Coordinated and scheduled ITSA SERENDIPITY EVENTS 2024, including various tournaments and technical events. Ensured efficient organization and communication among club members.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h4">ITSA Committee President</h3>
+                                        <h5 class="text-muted">Pune, Maharashtra</h5>
+                                        <span class="text-primary d-block mb-2">Aug 2024 – Present</span>
+                                        <p>
+                                            Currently leading event coordination and scheduling, including technical sessions and tournaments. Responsible for smooth execution, effective communication, and active member engagement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Hobbies Section -->
+                <section id="hobbies" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Hobbies</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card border-0 shadow-sm h-100 text-center py-4">
+                                    <div class="card-body">
+                                        <i class="fas fa-baseball-ball fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Cricket</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card border-0 shadow-sm h-100 text-center py-4">
+                                    <div class="card-body">
+                                        <i class="fas fa-plane fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Travelling & Exploring</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card border-0 shadow-sm h-100 text-center py-4">
+                                    <div class="card-body">
+                                        <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Reading</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Contact Section -->
+                <section id="contact" class="section bg-light">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 mb-5 mb-lg-0">
+                                <div class="contact-info">
+                                    <p class="mb-3"><i class="fas fa-user me-2 text-primary"></i>Sujal Sahu</p>
+                                    <p class="mb-3"><i class="fas fa-tag me-2 text-primary"></i>Data Analyst, Java Developer</p>
+                                    <p class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:sahusujal3008@gmail.com" class="text-decoration-none">sahusujal3008@gmail.com</a></p>
+                                    <p class="mb-3"><i class="fas fa-phone me-2 text-primary"></i><a href="tel:+8982094718" class="text-decoration-none">8982094718</a></p>
+                                    <p class="mb-4"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Wagholi, Pune</p>
+                                    
+                                    <div class="social-icons">
+                                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/sujal-sahu-45a487275/" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://github.com/sujal018" target="_blank"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" placeholder="Subject" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Footer -->
+                <footer class="py-4 bg-dark text-white">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <p class="mb-0">&copy; Copyright <a href="#" class="text-white text-decoration-none">Sujal Sahu</a>. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg back-to-top" id="backToTop"><i class="fas fa-angle-double-up"></i></a>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS
